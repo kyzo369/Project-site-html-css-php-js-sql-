@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Test – Grecia Antică</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bfbfbf; /* gri */
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Imagine fundal */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg") no-repeat center center/cover;
+            opacity: 0.15; /* opacitate redusă */
+            z-index: -1;
+        }
+
+        header {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 70%;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: rgba(244, 249, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            font-weight: bold;
+            color: grey;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Test – Grecia Antică</h1>
+</header>
+
+<div class="container">
+<form action="corectare.php" method="post">
+
+    Nume: <input type="text" name="nume" required><br><br>
+
+    <p>1. Unde s-au desfășurat primele Jocuri Olimpice?</p>
+    <input type="radio" name="q1" value="a"> Atena<br>
+    <input type="radio" name="q1" value="b"> Sparta<br>
+    <input type="radio" name="q1" value="c"> Olimpia<br>
+
+    <p>2. Cine a fost marele filosof, profesorul lui Alexandru cel Mare?</p>
+    <input type="radio" name="q2" value="a"> Socrate<br>
+    <input type="radio" name="q2" value="b"> Platon<br>
+    <input type="radio" name="q2" value="c"> Aristotel<br>
+
+    <p>3. Ce formă de guvernare a apărut în Atena?</p>
+    <input type="radio" name="q3" value="a"> Monarhia<br>
+    <input type="radio" name="q3" value="b"> Democrația<br>
+    <input type="radio" name="q3" value="c"> Dictatura<br>
+
+    <p>4. Zeul suprem în mitologia greacă era:</p>
+    <input type="radio" name="q4" value="a"> Poseidon<br>
+    <input type="radio" name="q4" value="b"> Zeus<br>
+    <input type="radio" name="q4" value="c"> Hades<br>
+
+    <p>5. Cetatea cunoscută pentru armata sa puternică era:</p>
+    <input type="radio" name="q5" value="a"> Atena<br>
+    <input type="radio" name="q5" value="b"> Sparta<br>
+    <input type="radio" name="q5" value="c"> Corint<br>
+
+    <p>6. Marele război dintre greci și perși se numește:</p>
+    <input type="radio" name="q6" value="a"> Războiul Peloponesiac<br>
+    <input type="radio" name="q6" value="b"> Războaiele Medice<br>
+    <input type="radio" name="q6" value="c"> Războiul Troian<br>
+
+    <p>7. Cine a scris „Iliada” și „Odiseea”?</p>
+    <input type="radio" name="q7" value="a"> Herodot<br>
+    <input type="radio" name="q7" value="b"> Homer<br>
+    <input type="radio" name="q7" value="c"> Sofocle<br>
+
+    <p>8. Conducătorul Atenei în perioada sa de maximă înflorire a fost:</p>
+    <input type="radio" name="q8" value="a"> Leonidas<br>
+    <input type="radio" name="q8" value="b"> Solon<br>
+    <input type="radio" name="q8" value="c"> Pericle<br>
+
+    <p>9. Clădirea dedicată zeilor în Grecia Antică se numea:</p>
+    <input type="radio" name="q9" value="a"> Amfiteatru<br>
+    <input type="radio" name="q9" value="b"> Templu<br>
+    <input type="radio" name="q9" value="c"> Agora<br>
+
+    <p>10. Alexandru cel Mare era regele:</p>
+    <input type="radio" name="q10" value="a"> Atenei<br>
+    <input type="radio" name="q10" value="b"> Macedoniei<br>
+    <input type="radio" name="q10" value="c"> Spartei<br><br>
+
+    <input type="submit" value="Trimite testul">
+
+</form>
+</div>
+
+</body>
+</html>

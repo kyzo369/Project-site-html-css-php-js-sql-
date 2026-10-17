@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Site simplu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* aceeași culoare peste tot */
+        }
+
+        /* Imaginea de sus pe toată lățimea */
+        .header {
+            width: 100%;
+            height: 200px;
+            background-image: url("sus5.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Conținut centrat cu spațiu lateral */
+        .content {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 30px;
+        }
+
+        .image-box {
+            width: 230px;
+            margin-right: 20px;
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .text-box {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .links {
+            margin-top: 40px;
+        }
+
+        .links ul {
+            list-style-type: square;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 220px;
+            right: 20px;
+            width: 250px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header"></div>
+
+<div class="content">
+    <h1>Grecia Antică</h1>
+
+    <div class="section">
+        <div class="image-box">
+            <img src="ares.jpg" alt="Grecia Antica">
+            <p class="caption">Ares - zeul războiului</p>
+        </div>
+
+        <div class="text-box">
+            <p>
+       Grecia Antică (în greacă Ἑλλάς, în latină Hellás) a fost o civilizație
+                    antică din bazinul mediteranean, provenită din peninsula balcanică, care 
+                    a durat din secolul al XII-lea î.Hr. până în anul 313 d.Hr., la oficializarea 
+                    creștinismului, sau până la închiderea academiei ateniene de către împăratul Iustinian I 
+                    în 529 d.Hr.
+            </p>
+
+            <p>
+                Se consideră că primii locuitori ai Greciei ar fi trăit pe insula Creta, 
+                    în jurul anului 3000 î.Hr. Însă atunci când istoricii vorbesc despre Grecia 
+                    antică, se referă strict la perioada dintre anii 1200 î.Hr. și 323 î.Hr.
+            </p>
+
+            <p>
+                Grecia antică și-a răspândit apoi teritoriul în toată zona estică a Mării 
+                    Mediterane. A fost o perioadă de progres cultural, științific și social. 
+                    Această civilizație a fost pionieră a sportului și inventatoare a teatrului, 
+                    influențând arhitectura și cultura europeană.
+            </p>
+			
+                <p>
+                    În Grecia antică au existat două orașe importante: Atena și Sparta. 
+                    Atena se axa pe științe și artă, în timp ce Sparta era centrată pe 
+                    artele marțiale.
+                </p>
+        </div>
+    </div>
+
+    <div class="links">
+        <h2>Pagini interne:</h2>
+        <ul>
+            <li><a href="pagna2.html">Arhitectura</a></li>
+            <li><a href="pagina3.html">Zeii greci</a></li>
+            <li><a href="pagina4.html">Jocurile Olimpice</a></li>
+            <li><a href="pagina6.html">Influențele asupra altor popoare</a></li>
+            <li><a href="pagina7.html">Alte personalități ale vremii</a></li>
+            <li><a href="test.html">Testează-ți cunoștințele!</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+</body>
+</html>
